@@ -1,6 +1,6 @@
 {
   "name": "rn-glsl-transformer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Siple React Native babel transformer for glsl, frag, vert, tesc, tese, geom and comp shader files",
   "author": "NikitaDudin <nikita.dudin@gmail.com>",
   "main": "index.js",

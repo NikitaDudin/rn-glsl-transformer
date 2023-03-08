@@ -12,7 +12,7 @@ const SHADER_FILE_EXTENSIONS = [
 
 const transform = async (params) => {
   if (SHADER_FILE_EXTENSIONS.some((ext) => {
-    return filename.toLowerCase().endsWith(`.${ext}`);
+    return params.filename.toLowerCase().endsWith(`.${ext}`);
   })) {
     const { src } = params;
     const output = `const shader = \`${src}\`;\nexport default shader;`;
