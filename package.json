@@ -1,0 +1,39 @@
+{
+  "name": "rn-glsl-transformer",
+  "version": "0.0.4",
+  "description": "Siple React Native babel transformer for glsl, frag, vert, tesc, tese, geom and comp shader files",
+  "author": "NikitaDudin <nikita.dudin@gmail.com>",
+  "main": "index.js",
+  "homepage": "https://github.com/NikitaDudin/rn-glsl-transformer#readme",
+  "readmeFilename": "README.md",
+  "license": "ISC",
+  "keywords": [
+    "expo",
+    "metro",
+    "babel"
+  ],
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "release": "npmpub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaDudin/rn-glsl-transformer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NikitaDudin/rn-glsl-transformer/issues"
+  },
+  "peerDependencies": {
+    "expo-modules-core": "*",
+    "metro-react-native-babel-transformer": "*"
+  },
+  "devDependencies": {
+    "expo": "^48.0.0",
+    "expo-module-scripts": "^3.0.0",
+    "expo-modules-core": "^1.2.4"
+  }
+}
