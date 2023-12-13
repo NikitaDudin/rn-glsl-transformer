@@ -28,6 +28,7 @@
     "url": "https://github.com/NikitaDudin/rn-glsl-transformer/issues"
   },
   "peerDependencies": {
+    "@react-native/metro-babel-transformer": "*",
     "expo-modules-core": "*",
     "metro-react-native-babel-transformer": "*"
   },
