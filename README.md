@@ -8,13 +8,13 @@ Simple React Native babel transformer for glsl, frag, vert, tesc, tese, geom and
 
 # Install
 ```
-npm install gl-glsl-transformer
+npm install rn-glsl-transformer
 ```
 
 or
 
 ```
-yarn add gl-glsl-transformer
+yarn add rn-glsl-transformer
 ```
 
 # Configure
