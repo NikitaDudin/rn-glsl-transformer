@@ -1,4 +1,11 @@
-const upstreamTransformer = require('metro-react-native-babel-transformer');
+const upstreamTransformer = (function () {
+  try {
+    const resolver = require("@react-native/metro-babel-transformer");
+    return resolver;
+  } catch (error) {
+    return require("metro-react-native-babel-transformer");
+  }
+}());
 
 const SHADER_FILE_EXTENSIONS = [
   'glsl', // unified, any shader type
@@ -15,7 +22,7 @@ const transform = async (params) => {
     return params.filename.toLowerCase().endsWith(`.${ext}`);
   })) {
     const { src } = params;
-    const output = `const shader = \`${src}\`;\nexport default shader;`;
+    const output = `;export default\`${src.replaceAll('\n', '\\n').replaceAll('\t', '\\t')}\`;`;
 
     return upstreamTransformer.transform({
       ...params,
