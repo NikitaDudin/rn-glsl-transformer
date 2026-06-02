@@ -21,11 +21,14 @@
     "test": "node --test",
     "prepack": "npm test",
     "release": "npm publish",
-    "release:dry": "npm pack --dry-run"
+    "release:dry": "npm publish --dry-run"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NikitaDudin/rn-glsl-transformer.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "bugs": {
     "url": "https://github.com/NikitaDudin/rn-glsl-transformer/issues"
